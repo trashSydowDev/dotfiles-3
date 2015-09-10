@@ -24,6 +24,7 @@ fi
 # Resolve DOTFILES_DIR (assuming ~/.dotfiles on distros without readlink and/or $BASH_SOURCE/$0)
 
 READLINK=$(which greadlink || which readlink)
+
 if $SHELL_BASH; then
     CURRENT_SCRIPT=$BASH_SOURCE
 else
@@ -31,7 +32,7 @@ else
 fi
 
 if [[ -n $CURRENT_SCRIPT && -x "$READLINK" ]]; then
-    SCRIPT_PATH=$($READLINK -f "$CURRENT_SCRIPT")
+    SCRIPT_PATH=$($READLINK -n "$CURRENT_SCRIPT")
     DOTFILES_DIR=$(dirname "$(dirname "$SCRIPT_PATH")")
 elif [ -d "$HOME/.dotfiles" ]; then
     DOTFILES_DIR="$HOME/.dotfiles"
@@ -42,7 +43,7 @@ fi
 
 # Finally we can source the dotfiles (order matters)
 
-for DOTFILE in "$DOTFILES_DIR"/system/.{function*,env,alias,grep,prompt,custom}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{function,function*,path,env,alias,completion,grep,prompt,custom}; do
     [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
@@ -60,6 +61,7 @@ fi
 
 # Set LSCOLORS
 
+# echo $DOTFILES_DIR
 eval "$(dircolors "$DOTFILES_DIR"/system/.dir_colors)"
 
 # Hook for extra/custom stuff

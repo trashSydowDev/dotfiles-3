@@ -9,3 +9,10 @@ EXTRA_DIR="$HOME/.extra"
 # Update dotfiles itself first
 
 [ -d "$DOTFILES_DIR/.git" ] && git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master
+
+if [ "$(uname)" == "Darwin" ]; then
+    ln -sfv "$DOTFILES_DIR/etc/mackup/.mackup.cfg" ~
+    if [ -f "$DOTFILES_DIR/install/osx.sh" ]; then
+        . "$DOTFILES_DIR/install/osx.sh"
+    fi
+fi

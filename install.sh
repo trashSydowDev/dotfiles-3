@@ -10,9 +10,20 @@ EXTRA_DIR="$HOME/.extra"
 
 [ -d "$DOTFILES_DIR/.git" ] && git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master
 
+# Bunch of symlinks
+
+ln -sfv "$DOTFILES_DIR/runcom/.bash_profile" ~
+ln -sfv "$DOTFILES_DIR/runcom/.inputrc" ~
+ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
+ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
+
 if [ "$(uname)" == "Darwin" ]; then
     ln -sfv "$DOTFILES_DIR/etc/mackup/.mackup.cfg" ~
     if [ -f "$DOTFILES_DIR/install/osx.sh" ]; then
         . "$DOTFILES_DIR/install/osx.sh"
     fi
 fi
+
+# Run tests
+
+bats test/*.bats

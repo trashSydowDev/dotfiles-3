@@ -1,6 +1,4 @@
 apps=(
-    alfred
-    atom
     dash
     dropbox
     firefox
@@ -10,7 +8,6 @@ apps=(
     google-chrome
     google-chrome-canary
     google-drive
-    iterm2
     kaleidoscope
     mou
     opera

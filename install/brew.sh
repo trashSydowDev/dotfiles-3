@@ -28,7 +28,6 @@ apps=(
     python
     shellcheck
     ssh-copy-id
-    svn
     tree
     vim
     wget

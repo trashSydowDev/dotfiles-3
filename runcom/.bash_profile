@@ -1,4 +1,5 @@
 # If not running interactively, don't do anything
+# 
 
 [ -z "$PS1" ] && return
 
@@ -41,7 +42,7 @@ fi
 
 # Finally we can source the dotfiles (order matters)
 
-for DOTFILE in "$DOTFILES_DIR"/system/.{function,function*,path,env,alias,completion,grep,prompt,custom}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{function*,env,alias,grep,prompt,custom}; do
     [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
@@ -53,12 +54,6 @@ fi
 
 if $SHELL_BASH; then
     for DOTFILE in "$DOTFILES_DIR"/system/.*.bash; do
-        [ -f "$DOTFILE" ] && . "$DOTFILE"
-    done
-fi
-
-if $SHELL_ZSH; then
-    for DOTFILE in "$DOTFILES_DIR"/system/.*.zsh; do
         [ -f "$DOTFILE" ] && . "$DOTFILE"
     done
 fi

@@ -1,24 +1,26 @@
 apps=(
-    dash
+    appcleaner
+    caffeine
+    cloudup
     dropbox
+    evernote
     firefox
-    firefox-nightly
-    flux
-    glimmerblocker
-    google-chrome
-    google-chrome-canary
     google-drive
-    kaleidoscope
     mou
     opera
     screenflow
+    skyfonts
+    skype
+    slack
     sourcetree
+    spectacle
     spotify
     sublime-text3
     transmit
+    utorrent
+    vagrant
     virtualbox
     vlc
-    webstorm
 )
 
 brew cask install "${apps[@]}"

@@ -21,10 +21,7 @@ brew tap caskroom/versions
 # Not OSX-only, but lazy.
 
 sudo gem install compass
-sudo gem install lunchy
-sudo gem install pygmentize
 sudo gem install sass
-sudo gem install sass-globbing
 
 # Globally install with npm
 # Not OSX-only, but npm was installed from this script as well.
@@ -32,13 +29,7 @@ sudo gem install sass-globbing
 npm install -g bower
 npm install -g grunt
 npm install -g gulp
-npm install -g http-server
-npm install -g nodemon
-npm install -g spot
-npm install -g svgo
-npm install -g tldr
-npm install -g underscore
-npm install -g vtop
+npm install -g replace
 
 # Install extra stuff
 

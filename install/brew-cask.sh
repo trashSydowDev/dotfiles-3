@@ -1,24 +1,13 @@
 apps=(
-    appcleaner
-    caffeine
     cloudup
-    dropbox
-    evernote
     firefox
     google-drive
     mou
-    opera
-    screenflow
-    skyfonts
     skype
     slack
-    sourcetree
     spectacle
     spotify
-    sublime-text3
-    transmit
     utorrent
-    vagrant
     virtualbox
     vlc
 )

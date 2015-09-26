@@ -202,8 +202,14 @@ defaults write com.apple.dock showhidden -bool true
 # Remove delay on dock hide/show
 defaults write com.apple.Dock autohide-delay -float 0
 
-# Magnization
-defaults write com.apple.dock largesize -float 100
+# Magnification
+defaults write com.apple.dock magnification -bool true
+
+# Icon size of magnified Dock items
+defaults write com.apple.dock largesize -int 100
+
+# Minimization effect: 'genie', 'scale', 'suck'
+defaults write com.apple.dock mineffect -string 'scale'
 
 ###############################################################################
 # Dashboard                                                                   #
@@ -396,8 +402,7 @@ sudo tmutil disablelocal
 ###############################################################################
 # Wallpaper
 ###############################################################################
-
-defaults write com.apple.desktop Background '{default = {ImageFilePath = "$DOTFILES_DIR/wallpapers/andromeda.jpg"; };}'
+osascript -e 'tell application "Finder" to set desktop picture to POSIX file "$DOTFILES_DIR/wallpapers/andromeda.jpg"'
 
 ###############################################################################
 # Kill affected applications                                                  #

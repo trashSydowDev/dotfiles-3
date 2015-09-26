@@ -37,12 +37,12 @@ fi
 
 # Finally we can source the dotfiles (order matters)
 
-for DOTFILE in "$DOTFILES_DIR"/system/.{function,function*,path,env,alias,completion,grep,prompt,custom}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{env,grep,prompt}; do
     [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
 if [ "$OS" = "OSX" ]; then
-    for DOTFILE in "$DOTFILES_DIR"/system/.{env,alias,function}.osx; do
+    for DOTFILE in "$DOTFILES_DIR"/system/.{env}.osx; do
         [ -f "$DOTFILE" ] && . "$DOTFILE"
     done
 fi
@@ -70,15 +70,3 @@ unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE
 # Export
 
 export SHELL_BASH SHELL_ZSH OS DOTFILES_DIR EXTRA_DIR
-
-#################################################################
-# Netshoes
-#################################################################
-
-export CATALINA_HOME=/Users/$(whoami)/bin/apache-tomcat-6.0.43
-export JRE_HOME="/Library/Java/Home"
-export JAVA_HOME=$JRE_HOME
-
-# Services
-alias ns-up="cd $CATALINA_HOME/bin && . catalina.sh start && cd -"
-alias ns-down="cd $CATALINA_HOME/bin && . catalina.sh stop && cd -"

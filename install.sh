@@ -23,5 +23,7 @@ if [ -f "$DOTFILES_DIR/install/osx.sh" ]; then
 	. "$DOTFILES_DIR/install/osx.sh"
 fi
 
+echo "Installation complete! Restart your computer in order to make changes work!"
+
 # Run tests
 # bats test/*.bats

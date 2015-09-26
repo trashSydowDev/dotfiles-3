@@ -20,9 +20,6 @@ sudo pmset -a standbydelay 86400
 # Disable audio feedback when volume is changed
 write com.apple.sound.beep.feedback -bool false
 
-# Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
-
 # Menu bar: disable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
@@ -101,8 +98,6 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 0
 
-# Automatically illuminate built-in MacBook keyboard in low light
-defaults write com.apple.BezelServices kDim -bool true
 # Turn off keyboard illumination when computer is not used for 5 minutes
 defaults write com.apple.BezelServices kDimTime -int 300
 
@@ -119,9 +114,6 @@ sudo systemsetup -settimezone "America/Sao_Paulo" > /dev/null
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
-
-# Use all F1, F2, etc. keys as standard function keys (requires restart)
-defaults write -g com.apple.keyboard.fnState -bool true
 
 ###############################################################################
 # Screen                                                                      #
@@ -156,12 +148,6 @@ defaults write com.apple.finder AppleShowAllFiles -bool true
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
-# Finder: show status bar
-defaults write com.apple.finder ShowStatusBar -bool true
-
-# Finder: show path bar
-defaults write com.apple.finder ShowPathbar -bool true
-
 # Finder: allow text selection in Quick Look
 defaults write com.apple.finder QLEnableTextSelection -bool true
 
@@ -183,7 +169,7 @@ defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
 defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 
 # Use AirDrop over every interface.
-defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
+# defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # Always open everything in Finder's list view.
 # Use list view in all Finder windows by default
@@ -215,6 +201,12 @@ defaults write com.apple.dock autohide -bool true
 
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
+
+# Remove delay on dock hide/show
+defaults write com.apple.Dock autohide-delay -float 0
+
+# Magnization
+defaults write com.apple.dock largesize -float 100
 
 ###############################################################################
 # Dashboard                                                                   #
@@ -253,7 +245,7 @@ defaults write com.apple.dock wvous-tl-modifier -int 0
 defaults write com.apple.dock wvous-tr-corner -int 2
 defaults write com.apple.dock wvous-tr-modifier -int 0
 
-# Bottom left screen corner → Display to sleep
+# Bottom left screen corner
 defaults write com.apple.dock wvous-bl-corner -int 0
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
@@ -405,9 +397,16 @@ defaults write com.apple.appstore ShowDebugMenu -bool true
 sudo tmutil disablelocal
 
 ###############################################################################
+# Wallpaper
+###############################################################################
+
+defaults write com.apple.desktop Background '{default = {ImageFilePath = "$DOTFILES_DIR/wallpapers/andromeda.jpg"; };}'
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
 for app in "Address Book" "Calendar" "Contacts" "Dock" "Finder" "Mail" "Safari" "SystemUIServer" "iCal" "iTunes"; do
     killall "$app" > /dev/null 2>&1
 done
+

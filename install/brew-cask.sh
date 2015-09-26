@@ -9,8 +9,9 @@ apps=(
     spotify
     utorrent
     virtualbox
-    vlc,
+    vlc
     1password
+    telegram
 )
 
 brew cask install "${apps[@]}"

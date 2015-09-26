@@ -6,4 +6,7 @@ mkdir -p "$BUNDLE_DIR" && (git clone https://github.com/gmarik/vundle.git "$BUND
 # Install bundles
 vim +PluginInstall +qall
 
+# Copy themes
+cp -r ~/.vim/bundle/bubblegum/colors/*.vim ~/.vim/colors
+
 cd -

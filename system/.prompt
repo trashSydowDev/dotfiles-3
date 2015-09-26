@@ -102,7 +102,7 @@ bash_prompt_command() {
         P_EXIT+="${P_RED}✘ "
     fi
 
-    PS1="${P_EXIT}${P_USER}${P_WHITE}@ ${P_YELLOW}${P_PWD}${P_WHITE}${P_GIT}${P_GIT_STATUS} ${P_RESET}"
+    PS1="${P_EXIT}${P_YELLOW}${P_PWD}${P_WHITE}${P_GIT}${P_GIT_STATUS} ${P_RESET}"
 }
 
 parse_git_branch() {

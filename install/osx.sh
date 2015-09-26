@@ -17,6 +17,10 @@ brew tap caskroom/versions
 
 . "$DOTFILES_DIR/install/bash.sh"
 
+# Install vundle
+
+. "$DOTFILES_DIR/install/vundle.sh"
+
 # Install Ruby gems (SASS, Compass)
 # Not OSX-only, but lazy.
 

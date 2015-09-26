@@ -16,14 +16,11 @@ ln -sfv "$DOTFILES_DIR/runcom/.bash_profile" ~
 ln -sfv "$DOTFILES_DIR/runcom/.inputrc" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
+ln -sfv "$DOTFILES_DIR/etc/mackup/.mackup.cfg" ~
 
-if [ "$(uname)" == "Darwin" ]; then
-    ln -sfv "$DOTFILES_DIR/etc/mackup/.mackup.cfg" ~
-    if [ -f "$DOTFILES_DIR/install/osx.sh" ]; then
-        . "$DOTFILES_DIR/install/osx.sh"
-    fi
+if [ -f "$DOTFILES_DIR/install/osx.sh" ]; then
+	. "$DOTFILES_DIR/install/osx.sh"
 fi
 
 # Run tests
-
-bats test/*.bats
+# bats test/*.bats

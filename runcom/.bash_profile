@@ -36,13 +36,12 @@ else
 fi
 
 # Finally we can source the dotfiles (order matters)
-
 for DOTFILE in "$DOTFILES_DIR"/system/.{env,grep,prompt}; do
     [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
 if [ "$OS" = "OSX" ]; then
-    for DOTFILE in "$DOTFILES_DIR"/system/.{env}.osx; do
+    for DOTFILE in "$DOTFILES_DIR"/system/.{env,}.osx; do
         [ -f "$DOTFILE" ] && . "$DOTFILE"
     done
 fi

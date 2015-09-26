@@ -4,14 +4,8 @@
 [ -z "$PS1" ] && return
 
 # Shell
-
-if [ -n "$ZSH_VERSION" ]; then
-   SHELL_ZSH=true
-   SHELL_BASH=false
-elif [ -n "$BASH_VERSION" ]; then
-   SHELL_BASH=true
-   SHELL_ZSH=false
-fi
+SHELL_BASH=true
+SHELL_ZSH=false
 
 # OS
 
@@ -76,3 +70,15 @@ unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE
 # Export
 
 export SHELL_BASH SHELL_ZSH OS DOTFILES_DIR EXTRA_DIR
+
+#################################################################
+# Netshoes
+#################################################################
+
+export CATALINA_HOME=/Users/$(whoami)/bin/apache-tomcat-6.0.43
+export JRE_HOME="/Library/Java/Home"
+export JAVA_HOME=$JRE_HOME
+
+# Services
+alias ns-up="cd $CATALINA_HOME/bin && . catalina.sh start && cd -"
+alias ns-down="cd $CATALINA_HOME/bin && . catalina.sh stop && cd -"

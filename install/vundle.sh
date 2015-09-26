@@ -6,7 +6,4 @@ mkdir -p "$BUNDLE_DIR" && (git clone https://github.com/gmarik/vundle.git "$BUND
 # Install bundles
 vim +PluginInstall +qall
 
-# Compile YouCompleteMe
-cd "$BUNDLE_DIR/YouCompleteMe" && ./install.sh
-
 cd -

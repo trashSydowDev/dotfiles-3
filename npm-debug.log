@@ -1,11 +1,7 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node',
-1 verbose cli   '/Users/weslleyaraujo/local/bin/npm',
-1 verbose cli   'install',
-1 verbose cli   '-g',
-1 verbose cli   'replace' ]
-2 info using npm@2.5.0
-3 info using node@v0.10.35
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'replace' ]
+2 info using npm@2.1.5
+3 info using node@v0.10.32
 4 silly cache add args [ 'replace', null ]
 5 verbose cache add spec replace
 6 silly cache add parsed spec { raw: 'replace',
@@ -18,160 +14,126 @@
 8 silly addNamed semver.valid null
 9 silly addNamed semver.validRange *
 10 silly addNameRange { name: 'replace', range: '*', hasData: false }
-11 silly mapToRegistry name replace
-12 silly mapToRegistry using default registry
-13 silly mapToRegistry registry https://registry.npmjs.org/
-14 silly mapToRegistry uri https://registry.npmjs.org/replace
-15 verbose addNameRange registry:https://registry.npmjs.org/replace not in flight; fetching
-16 verbose request uri https://registry.npmjs.org/replace
-17 verbose request no auth needed
-18 info attempt registry request try #1 at 14:14:06
-19 verbose request using bearer token for auth
-20 verbose request id c1f10de46581b0e7
-21 verbose etag "4OS8Y1VRDFDYMSIAQWG61XY8C"
-22 http request GET https://registry.npmjs.org/replace
-23 http 304 https://registry.npmjs.org/replace
-24 silly get cb [ 304,
-24 silly get   { 'cache-control': 'max-age=60',
-24 silly get     'accept-ranges': 'bytes',
-24 silly get     date: 'Sat, 26 Sep 2015 17:14:00 GMT',
-24 silly get     via: '1.1 varnish',
-24 silly get     connection: 'keep-alive',
-24 silly get     'x-served-by': 'cache-jfk1026-JFK',
-24 silly get     'x-cache': 'MISS',
-24 silly get     'x-cache-hits': '0',
-24 silly get     'x-timer': 'S1443287640.192485,VS0,VE85' } ]
-25 verbose etag https://registry.npmjs.org/replace from cache
-26 verbose get saving replace to /Users/weslleyaraujo/.npm/registry.npmjs.org/replace/.cache.json
-27 silly addNameRange number 2 { name: 'replace', range: '*', hasData: true }
-28 silly addNameRange versions [ 'replace',
-28 silly addNameRange   [ '0.1.0',
-28 silly addNameRange     '0.1.1',
-28 silly addNameRange     '0.1.3',
-28 silly addNameRange     '0.1.4',
-28 silly addNameRange     '0.1.6',
-28 silly addNameRange     '0.1.7',
-28 silly addNameRange     '0.1.8',
-28 silly addNameRange     '0.1.9',
-28 silly addNameRange     '0.1.10',
-28 silly addNameRange     '0.1.11',
-28 silly addNameRange     '0.2.0',
-28 silly addNameRange     '0.2.1',
-28 silly addNameRange     '0.2.2',
-28 silly addNameRange     '0.2.3',
-28 silly addNameRange     '0.2.4',
-28 silly addNameRange     '0.2.5',
-28 silly addNameRange     '0.2.6',
-28 silly addNameRange     '0.2.7',
-28 silly addNameRange     '0.2.8',
-28 silly addNameRange     '0.2.9',
-28 silly addNameRange     '0.2.10',
-28 silly addNameRange     '0.3.0' ] ]
-29 verbose addNamed replace@0.3.0
-30 silly addNamed semver.valid 0.3.0
-31 silly addNamed semver.validRange 0.3.0
-32 silly cache afterAdd replace@0.3.0
-33 verbose afterAdd /Users/weslleyaraujo/.npm/replace/0.3.0/package/package.json not in flight; writing
-34 verbose afterAdd /Users/weslleyaraujo/.npm/replace/0.3.0/package/package.json written
-35 silly install resolved [ { name: 'replace',
-35 silly install resolved     description: 'Command line search and replace utility',
-35 silly install resolved     license: 'MIT',
-35 silly install resolved     version: '0.3.0',
-35 silly install resolved     author: { name: 'Heather Arthur', email: 'fayearthur@gmail.com' },
-35 silly install resolved     main: 'replace.js',
-35 silly install resolved     repository: { type: 'git', url: 'http://github.com/harthur/replace.git' },
-35 silly install resolved     scripts: { test: 'tap test' },
-35 silly install resolved     dependencies: { nomnom: '1.6.x', colors: '0.5.x', minimatch: '~0.2.9' },
-35 silly install resolved     devDependencies: { tape: '~0.2.2' },
-35 silly install resolved     bin: { replace: './bin/replace.js', search: './bin/search.js' },
-35 silly install resolved     keywords: [ 'sed', 'grep', 'search', 'replace' ],
-35 silly install resolved     bugs: { url: 'https://github.com/harthur/replace/issues' },
-35 silly install resolved     homepage: 'https://github.com/harthur/replace',
-35 silly install resolved     _id: 'replace@0.3.0',
-35 silly install resolved     dist:
-35 silly install resolved      { shasum: '60081721188658595ab6a794eb7fedcb4c8d39c7',
-35 silly install resolved        tarball: 'http://registry.npmjs.org/replace/-/replace-0.3.0.tgz' },
-35 silly install resolved     _from: 'replace@*',
-35 silly install resolved     _npmVersion: '1.4.3',
-35 silly install resolved     _npmUser: { name: 'harth', email: 'fayearthur@gmail.com' },
-35 silly install resolved     maintainers: [ [Object] ],
-35 silly install resolved     directories: {},
-35 silly install resolved     _shasum: '60081721188658595ab6a794eb7fedcb4c8d39c7',
-35 silly install resolved     _resolved: 'https://registry.npmjs.org/replace/-/replace-0.3.0.tgz',
-35 silly install resolved     readme: 'ERROR: No README data found!' } ]
-36 info install replace@0.3.0 into /Users/weslleyaraujo/local/lib
-37 info installOne replace@0.3.0
-38 verbose installOne of replace to /Users/weslleyaraujo/local/lib not in flight; installing
-39 verbose lock using /Users/weslleyaraujo/.npm/_locks/replace-bbe662021e42e3bf.lock for /Users/weslleyaraujo/local/lib/node_modules/replace
-40 silly install write writing replace 0.3.0 to /Users/weslleyaraujo/local/lib/node_modules/replace
-41 silly cache addNamed cb replace@0.3.0
-42 verbose unbuild lib/node_modules/replace
-43 info preuninstall replace@0.3.0
-44 info uninstall replace@0.3.0
-45 verbose unbuild rmStuff replace@0.3.0 from /Users/weslleyaraujo/local/lib/node_modules
-46 verbose gentlyRm verifying that /Users/weslleyaraujo/local is managed by npm
-47 verbose gentlyRm verifying that /Users/weslleyaraujo/local is managed by npm
-48 silly isManaged /Users/weslleyaraujo/local is not inside /Users/weslleyaraujo/local/lib/node_modules
-49 silly isManaged /Users/weslleyaraujo/local is not inside /Users/weslleyaraujo/local/lib/node_modules
-50 silly isManaged /Users/weslleyaraujo/local is not inside /Users/weslleyaraujo/local/lib/node_modules
-51 silly isManaged /Users/weslleyaraujo/local is not inside /Users/weslleyaraujo/local/lib/node_modules
-52 silly isManaged /Users/weslleyaraujo/local/bin is inside /Users/weslleyaraujo/local
-53 silly gentlyRm /Users/weslleyaraujo/local is managed by npm
-54 silly gentlyRm /Users/weslleyaraujo/local/bin/replace is under /Users/weslleyaraujo/local
-55 verbose gentlyRm vacuuming /Users/weslleyaraujo/local/bin/replace up to /Users/weslleyaraujo/local
-56 silly isManaged /Users/weslleyaraujo/local/bin is inside /Users/weslleyaraujo/local
-57 silly gentlyRm /Users/weslleyaraujo/local is managed by npm
-58 silly gentlyRm /Users/weslleyaraujo/local/bin/search is under /Users/weslleyaraujo/local
-59 verbose gentlyRm vacuuming /Users/weslleyaraujo/local/bin/search up to /Users/weslleyaraujo/local
-60 silly gentlyRm removing /Users/weslleyaraujo/local/bin/replace
-61 silly gentlyRm removing /Users/weslleyaraujo/local/bin/search
-62 silly gentlyRm quitting because other entries in /Users/weslleyaraujo/local/bin
-63 silly gentlyRm quitting because other entries in /Users/weslleyaraujo/local/bin
-64 info postuninstall replace@0.3.0
-65 verbose gentlyRm vacuuming /Users/weslleyaraujo/local/lib/node_modules/replace
-66 silly gentlyRm purging /Users/weslleyaraujo/local/lib/node_modules/replace
-67 verbose unlock done using /Users/weslleyaraujo/.npm/_locks/replace-bbe662021e42e3bf.lock for /Users/weslleyaraujo/local/lib/node_modules/replace
-68 verbose stack Error: EACCES, unlink '/Users/weslleyaraujo/local/lib/node_modules/replace/README.md'
-69 verbose cwd /Users/weslleyaraujo/workspace/dotfiles
-70 error Darwin 14.4.0
-71 error argv "node" "/Users/weslleyaraujo/local/bin/npm" "install" "-g" "replace"
-72 error node v0.10.35
-73 error npm  v2.5.0
-74 error path /Users/weslleyaraujo/local/lib/node_modules/replace/README.md
-75 error code EACCES
-76 error errno 3
-77 error Error: EACCES, unlink '/Users/weslleyaraujo/local/lib/node_modules/replace/README.md'
-77 error  { [Error: EACCES, unlink '/Users/weslleyaraujo/local/lib/node_modules/replace/README.md']
-77 error   errno: 3,
-77 error   code: 'EACCES',
-77 error   path: '/Users/weslleyaraujo/local/lib/node_modules/replace/README.md' }
-78 error Please try running this command again as root/Administrator.
-79 verbose exit [ 3, true ]
-80 verbose unbuild lib/node_modules/replace
-81 info preuninstall replace@0.3.0
-82 info uninstall replace@0.3.0
-83 verbose unbuild rmStuff replace@0.3.0 from /Users/weslleyaraujo/local/lib/node_modules
-84 verbose gentlyRm verifying that /Users/weslleyaraujo/local is managed by npm
-85 silly isManaged /Users/weslleyaraujo/local is not inside /Users/weslleyaraujo/local/lib/node_modules
-86 silly isManaged /Users/weslleyaraujo/local is not inside /Users/weslleyaraujo/local/lib/node_modules
-87 silly isManaged /Users/weslleyaraujo/local is not inside /Users/weslleyaraujo/local/bin
-88 silly isManaged /Users/weslleyaraujo/local is inside /Users/weslleyaraujo/local
-89 verbose gentlyRm verifying that /Users/weslleyaraujo/local is managed by npm
-90 silly isManaged /Users/weslleyaraujo/local is not inside /Users/weslleyaraujo/local/lib/node_modules
-91 silly isManaged /Users/weslleyaraujo/local is not inside /Users/weslleyaraujo/local/lib/node_modules
-92 silly isManaged /Users/weslleyaraujo/local is not inside /Users/weslleyaraujo/local/bin
-93 silly isManaged /Users/weslleyaraujo/local is inside /Users/weslleyaraujo/local
-94 silly gentlyRm /Users/weslleyaraujo/local is managed by npm
-95 silly gentlyRm /Users/weslleyaraujo/local/bin/replace is under /Users/weslleyaraujo/local
-96 verbose gentlyRm vacuuming /Users/weslleyaraujo/local/bin/replace up to /Users/weslleyaraujo/local
-97 silly gentlyRm /Users/weslleyaraujo/local is managed by npm
-98 silly gentlyRm /Users/weslleyaraujo/local/bin/search is under /Users/weslleyaraujo/local
-99 verbose gentlyRm vacuuming /Users/weslleyaraujo/local/bin/search up to /Users/weslleyaraujo/local
-100 info postuninstall replace@0.3.0
-101 verbose gentlyRm vacuuming /Users/weslleyaraujo/local/lib/node_modules/replace
-102 silly gentlyRm purging /Users/weslleyaraujo/local/lib/node_modules/replace
-103 error error rolling back Error: EACCES, unlink '/Users/weslleyaraujo/local/lib/node_modules/replace/README.md'
-103 error error rolling back  { [Error: EACCES, unlink '/Users/weslleyaraujo/local/lib/node_modules/replace/README.md']
-103 error error rolling back   errno: 3,
-103 error error rolling back   code: 'EACCES',
-103 error error rolling back   path: '/Users/weslleyaraujo/local/lib/node_modules/replace/README.md' }
+11 verbose mapToRegistry name replace
+12 verbose mapToRegistry uri https://registry.npmjs.org/replace
+13 verbose addNameRange registry:https://registry.npmjs.org/replace not in flight; fetching
+14 verbose request on initialization, where is /replace
+15 verbose request after pass 1, where is /replace
+16 verbose request url raw /replace
+17 verbose request resolving registry [ 'https://registry.npmjs.org/', './replace' ]
+18 verbose request after pass 2, where is https://registry.npmjs.org/replace
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 16:29:48
+21 verbose request using bearer token for auth
+22 verbose request id 739c0c40f9c7c364
+23 verbose etag "4OS8Y1VRDFDYMSIAQWG61XY8C"
+24 http request GET https://registry.npmjs.org/replace
+25 http 304 https://registry.npmjs.org/replace
+26 silly registry.get cb [ 304,
+26 silly registry.get   { 'cache-control': 'max-age=60',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     date: 'Sat, 26 Sep 2015 19:29:50 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-iad2135-IAD',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1443295789.660160,VS0,VE376' } ]
+27 verbose etag https://registry.npmjs.org/replace from cache
+28 silly addNameRange number 2 { name: 'replace', range: '*', hasData: true }
+29 silly addNameRange versions [ 'replace',
+29 silly addNameRange   [ '0.1.0',
+29 silly addNameRange     '0.1.1',
+29 silly addNameRange     '0.1.3',
+29 silly addNameRange     '0.1.4',
+29 silly addNameRange     '0.1.6',
+29 silly addNameRange     '0.1.7',
+29 silly addNameRange     '0.1.8',
+29 silly addNameRange     '0.1.9',
+29 silly addNameRange     '0.1.10',
+29 silly addNameRange     '0.1.11',
+29 silly addNameRange     '0.2.0',
+29 silly addNameRange     '0.2.1',
+29 silly addNameRange     '0.2.2',
+29 silly addNameRange     '0.2.3',
+29 silly addNameRange     '0.2.4',
+29 silly addNameRange     '0.2.5',
+29 silly addNameRange     '0.2.6',
+29 silly addNameRange     '0.2.7',
+29 silly addNameRange     '0.2.8',
+29 silly addNameRange     '0.2.9',
+29 silly addNameRange     '0.2.10',
+29 silly addNameRange     '0.3.0' ] ]
+30 verbose addNamed replace@0.3.0
+31 silly addNamed semver.valid 0.3.0
+32 silly addNamed semver.validRange 0.3.0
+33 silly cache afterAdd replace@0.3.0
+34 verbose afterAdd /Users/weslleyaraujo/.npm/replace/0.3.0/package/package.json not in flight; writing
+35 verbose afterAdd /Users/weslleyaraujo/.npm/replace/0.3.0/package/package.json written
+36 silly install resolved [ { name: 'replace',
+36 silly install resolved     description: 'Command line search and replace utility',
+36 silly install resolved     license: 'MIT',
+36 silly install resolved     version: '0.3.0',
+36 silly install resolved     author: { name: 'Heather Arthur', email: 'fayearthur@gmail.com' },
+36 silly install resolved     main: 'replace.js',
+36 silly install resolved     repository: { type: 'git', url: 'http://github.com/harthur/replace.git' },
+36 silly install resolved     scripts: { test: 'tap test' },
+36 silly install resolved     dependencies: { nomnom: '1.6.x', colors: '0.5.x', minimatch: '~0.2.9' },
+36 silly install resolved     devDependencies: { tape: '~0.2.2' },
+36 silly install resolved     bin: { replace: './bin/replace.js', search: './bin/search.js' },
+36 silly install resolved     keywords: [ 'sed', 'grep', 'search', 'replace' ],
+36 silly install resolved     bugs: { url: 'https://github.com/harthur/replace/issues' },
+36 silly install resolved     homepage: 'https://github.com/harthur/replace',
+36 silly install resolved     _id: 'replace@0.3.0',
+36 silly install resolved     dist:
+36 silly install resolved      { shasum: '60081721188658595ab6a794eb7fedcb4c8d39c7',
+36 silly install resolved        tarball: 'http://registry.npmjs.org/replace/-/replace-0.3.0.tgz' },
+36 silly install resolved     _from: 'replace@*',
+36 silly install resolved     _npmVersion: '1.4.3',
+36 silly install resolved     _npmUser: { name: 'harth', email: 'fayearthur@gmail.com' },
+36 silly install resolved     maintainers: [ [Object] ],
+36 silly install resolved     directories: {},
+36 silly install resolved     _shasum: '60081721188658595ab6a794eb7fedcb4c8d39c7',
+36 silly install resolved     _resolved: 'https://registry.npmjs.org/replace/-/replace-0.3.0.tgz',
+36 silly install resolved     readme: 'ERROR: No README data found!' } ]
+37 info install replace@0.3.0 into /usr/local/lib
+38 info installOne replace@0.3.0
+39 verbose installOne of replace to /usr/local/lib not in flight; installing
+40 verbose lock using /Users/weslleyaraujo/.npm/_locks/replace-7731661a7e4589f6.lock for /usr/local/lib/node_modules/replace
+41 silly install write writing replace 0.3.0 to /usr/local/lib/node_modules/replace
+42 silly cache addNamed cb replace@0.3.0
+43 verbose unbuild lib/node_modules/replace
+44 verbose gentlyRm vacuuming /usr/local/lib/node_modules/replace
+45 verbose tar unpack /Users/weslleyaraujo/.npm/replace/0.3.0/package.tgz
+46 verbose tar unpacking to /usr/local/lib/node_modules/replace
+47 verbose gentlyRm vacuuming /usr/local/lib/node_modules/replace
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 verbose fstream_path /usr/local/lib/node_modules/replace
+50 verbose fstream_type Directory
+51 verbose fstream_class DirWriter
+52 verbose stack Error: EACCES, mkdir '/usr/local/lib/node_modules/replace'
+53 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+53 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+53 verbose fstream_stack Object.oncomplete (fs.js:107:15)
+54 verbose cwd /Users/weslleyaraujo/workspace/dotfiles
+55 error Darwin 14.5.0
+56 error argv "node" "/usr/local/bin/npm" "install" "-g" "replace"
+57 error node v0.10.32
+58 error npm  v2.1.5
+59 error path /usr/local/lib/node_modules/replace
+60 error code EACCES
+61 error errno 3
+62 error Error: EACCES, mkdir '/usr/local/lib/node_modules/replace'
+62 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/replace']
+62 error   errno: 3,
+62 error   code: 'EACCES',
+62 error   path: '/usr/local/lib/node_modules/replace',
+62 error   fstream_type: 'Directory',
+62 error   fstream_path: '/usr/local/lib/node_modules/replace',
+62 error   fstream_class: 'DirWriter',
+62 error   fstream_stack:
+62 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+62 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+62 error      'Object.oncomplete (fs.js:107:15)' ] }
+63 error Please try running this command again as root/Administrator.
+64 verbose exit [ 3, true ]

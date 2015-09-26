@@ -29,9 +29,6 @@ defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreS
 # Menu bar: show battery percentage
 defaults write com.apple.menuextra.battery -bool true
 
-# Disable opening and closing window animations
-defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
-
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 

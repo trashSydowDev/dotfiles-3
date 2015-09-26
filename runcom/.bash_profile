@@ -62,6 +62,14 @@ if [ -d "$EXTRA_DIR" ]; then
     done
 fi
 
+# Source aditional functions
+source $DOTFILES_DIR/terminal/colors.sh
+
+# Terminal settings
+terminal_set_foreground_color white
+terminal_set_background_color SuperGray
+terminal_set_font "Andale Mono" 18
+
 # Clean up
 
 unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE

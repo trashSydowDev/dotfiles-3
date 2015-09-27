@@ -136,9 +136,6 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool true
 
-# Finder: disable window animations and Get Info animations
-defaults write com.apple.finder DisableAllAnimations -bool true
-
 # Finder: show hidden files by default
 defaults write com.apple.finder AppleShowAllFiles -bool true
 
@@ -164,9 +161,6 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.frameworks.diskimages skip-verify -bool true
 defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
 defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
-
-# Use AirDrop over every interface.
-# defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # Always open everything in Finder's list view.
 # Use list view in all Finder windows by default

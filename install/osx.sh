@@ -31,8 +31,11 @@ sudo gem install sass
 
 npm install -g bower
 npm install -g grunt
+npm install -g grunt-cli
 npm install -g gulp
 npm install -g replace
+npm install -g babel
+npm install -g peerflix
 
 # Install extra stuff
 

@@ -12,6 +12,7 @@ apps=(
     vlc
     1password
     telegram
+    sublime-text3
 )
 
 brew cask install "${apps[@]}"

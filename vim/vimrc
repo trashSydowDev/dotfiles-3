@@ -54,4 +54,4 @@ nmap <c-p> :bp<CR> " map (ctrl + p) => :bp // buffer prev
 " =======================================
 " Colorscheme
 " =======================================
-colorscheme bubblegum
+colorscheme bubblegum-256-dark

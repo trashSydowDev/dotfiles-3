@@ -42,3 +42,7 @@ npm install -g peerflix
 if [ -d "$EXTRA_DIR" -a -f "$EXTRA_DIR/install/osx.sh" ]; then
     . "$EXTRA_DIR/install/osx.sh"
 fi
+
+# Set configuration
+
+$DOTFILES_DIR/bin/dotfiles osx

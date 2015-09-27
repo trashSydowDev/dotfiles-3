@@ -402,7 +402,7 @@ sudo tmutil disablelocal
 ###############################################################################
 # Wallpaper
 ###############################################################################
-osascript -e 'tell application "Finder" to set desktop picture to POSIX file "$DOTFILES_DIR/wallpapers/andromeda.jpg"'
+osascript -e "tell application \"Finder\" to set desktop picture to POSIX file \"$DOTFILES_DIR/wallpapers/andromeda.jpg\""
 
 ###############################################################################
 # Kill affected applications                                                  #

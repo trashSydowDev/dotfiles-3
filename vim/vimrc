@@ -6,30 +6,11 @@
 " Weslley Araujo <http://github.com/weslleyaraujo>
 " =======================================
 
-" initial settings (specific for vundle)
-set nocompatible
-filetype off
-
-" set vundle as plugin manager
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
-filetype plugin indent on
-
-" =======================================
-" Plugins
-" =======================================
-
-" Emmet vim
-Bundle 'mattn/emmet-vim'
-
-" Editor config
-Bundle 'editorconfig/editorconfig-vim'
-
-" =======================================
-" Themes
-" =======================================
-Bundle 'baskerville/bubblegum'
+" Load plugins
+"
+if filereadable(expand("~/vundle.vim"))
+  source ~/vundle.vim
+endif
 
 " =======================================
 " My default configs

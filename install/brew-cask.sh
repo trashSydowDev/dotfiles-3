@@ -11,7 +11,6 @@ apps=(
     virtualbox
     vlc
     1password
-    telegram
     sublime-text3
 )
 

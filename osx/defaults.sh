@@ -200,7 +200,7 @@ defaults write com.apple.Dock autohide-delay -float 0
 defaults write com.apple.dock magnification -bool true
 
 # Icon size of magnified Dock items
-defaults write com.apple.dock largesize -int 100
+defaults write com.apple.dock largesize -int 60
 
 # Minimization effect: 'genie', 'scale', 'suck'
 defaults write com.apple.dock mineffect -string 'scale'

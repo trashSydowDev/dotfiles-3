@@ -45,4 +45,6 @@ fi
 
 # Set configuration
 
-$DOTFILES_DIR/bin/dotfiles osx
+. "$DOTFILES_DIR/osx/defaults-chrome.sh"
+. "$DOTFILES_DIR/osx/defaults.sh"
+. "$DOTFILES_DIR/osx/dock.sh"

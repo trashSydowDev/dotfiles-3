@@ -14,6 +14,7 @@ apps=(
     tree
     vim
     wget
+    mackup
 )
 
 brew install "${apps[@]}"

@@ -10,7 +10,6 @@ apps=(
     utorrent
     virtualbox
     vlc
-    1password
     sublime-text3
 )
 

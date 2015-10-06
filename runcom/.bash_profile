@@ -70,6 +70,10 @@ terminal_set_foreground_color white
 terminal_set_background_color SuperGray
 terminal_set_font "Andale Mono" 18
 
+# Vim
+
+cp $DOTFILES_DIR/vim/vimrc ~/.vimrc
+
 # Clean up
 
 unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE

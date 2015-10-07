@@ -36,6 +36,9 @@ npm install -g gulp
 npm install -g replace
 npm install -g babel
 npm install -g peerflix
+npm install -g watchify
+npm install -g uglifyjs
+npm install -g eslint
 
 # Install extra stuff
 

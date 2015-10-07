@@ -1,6 +1,6 @@
 # Dotfiles
 
-Dotfiles based on a gret work from [Igor Apa](http://github.com/igorapa).
+Dotfiles based on a great work from [Igor Apa](http://github.com/igorapa).
 
 ## Install
 

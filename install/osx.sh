@@ -39,6 +39,7 @@ npm install -g peerflix
 npm install -g watchify
 npm install -g uglifyjs
 npm install -g eslint
+npm install -g babelify
 
 # Install extra stuff
 

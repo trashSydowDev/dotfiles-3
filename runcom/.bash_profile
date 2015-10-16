@@ -68,7 +68,7 @@ source $DOTFILES_DIR/terminal/colors.sh
 # Terminal settings
 terminal_set_foreground_color white
 terminal_set_background_color SuperGray
-terminal_set_font "Andale Mono" 14
+terminal_set_font "Andale Mono" 16
 
 # Vim
 

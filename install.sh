@@ -19,6 +19,10 @@ ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 ln -sfv "$DOTFILES_DIR/etc/mackup/.mackup.cfg" ~
 ln -sfv "$DOTFILES_DIR/terminal/.colors.csv" ~
 
+# Git extras
+
+. "$DOTFILES_DIR/git/extras.sh"
+
 if [ -f "$DOTFILES_DIR/install/osx.sh" ]; then
 	. "$DOTFILES_DIR/install/osx.sh"
 fi

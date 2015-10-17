@@ -62,6 +62,9 @@ if [ -d "$EXTRA_DIR" ]; then
     done
 fi
 
+# Source git autocomplete
+source ~/git-completion.bash
+
 # Source aditional functions
 source $DOTFILES_DIR/terminal/colors.sh
 

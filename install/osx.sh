@@ -23,6 +23,7 @@ brew tap caskroom/versions
 # Install Ruby gems (SASS, Compass)
 # Not OSX-only, but lazy.
 
+sudo gem install bundler
 sudo gem install compass
 sudo gem install sass
 

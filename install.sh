@@ -16,6 +16,7 @@ ln -sfv "$DOTFILES_DIR/runcom/.bash_profile" ~
 ln -sfv "$DOTFILES_DIR/runcom/.inputrc" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
+ln -sfv "$DOTFILES_DIR/git/.git_commit_msg.txt" ~
 ln -sfv "$DOTFILES_DIR/etc/mackup/.mackup.cfg" ~
 ln -sfv "$DOTFILES_DIR/terminal/.colors.csv" ~
 

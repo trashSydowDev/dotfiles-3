@@ -57,3 +57,5 @@
 [merge]
 	tool = vimdiff
 
+[commit]
+	template = /Users/weslley.araujo/.git_commit_msg.txt

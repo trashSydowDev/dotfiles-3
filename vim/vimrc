@@ -54,4 +54,8 @@ nmap <c-p> :bp<CR> " map (ctrl + p) => :bp // buffer prev
 " =======================================
 " Colorscheme
 " =======================================
-colorscheme bubblegum-256-dark
+try
+	colorscheme bubblegum-256-dark
+catch /^Vim\%((\a\+)\)\=:E185/
+	echo 'Cant find colorscheme bubblegum yet!'
+endtry

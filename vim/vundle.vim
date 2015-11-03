@@ -16,7 +16,7 @@ call vundle#begin("$HOME/.vim/bundle")
 
 " let Vundle manage Vundle (required)
 
-Bundle "gmarik/vundle"
+Bundle 'gmarik/vundle'
 
 " Generic
 

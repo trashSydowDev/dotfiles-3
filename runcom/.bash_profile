@@ -76,6 +76,7 @@ terminal_set_font "Andale Mono" 16
 # Vim
 
 cp $DOTFILES_DIR/vim/vimrc ~/.vimrc
+cp $DOTFILES_DIR/vim/vundle.vim ~/.vim
 
 # Clean up
 
